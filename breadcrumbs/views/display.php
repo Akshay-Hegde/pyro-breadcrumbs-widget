@@ -13,6 +13,8 @@
 					&bull;
 				<?php elseif($separator == 'slash'): ?>
 					/
+				<?php elseif($separator == 'custom'): ?>
+					<img src="<?php echo $options['custom_url']; ?>" />
 				<?php endif; ?>
 			</span>
 			{{ if uri }}
